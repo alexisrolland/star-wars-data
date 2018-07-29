@@ -21,7 +21,7 @@ There is a relationship between planets and people as one planet is the homeworl
 
 # Queries Examples
 Count number of planets:
-```
+```sql
 \connect star_wars;
 select count(*) from base.planet;
 
@@ -32,7 +32,7 @@ select count(*) from base.planet;
 ```
 
 Find the Skywalker family:
-```
+```sql
 \connect star_wars;
 select a.name as character, b.name as planet
 from base.people a
